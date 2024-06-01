@@ -1,4 +1,15 @@
- loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF")()
+local PlaceId = game.PlaceId
+local GameId = game.gameId
+if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
+    if Mode == "PVP" then
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BFPVP")()
+	return
+    end
+    if Platform == "Mobile" and Device ~= "PC" then
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BFMobile")()
+	return
+    end
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/BF")()
 elseif GameId == 5675104029 then
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/Anime%20Fantasy")()
 elseif PlaceId == 6897167394 then
